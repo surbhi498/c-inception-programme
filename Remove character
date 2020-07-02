@@ -1,0 +1,59 @@
+// input - given string
+// You need to remove all occurrences of character c that are present in string input.
+// Change in the input itself. So no need to return or print anything.
+#include<stdio.h>
+#include <iostream>
+#include <string.h>
+void removeAllOccurrencesOfChar(char input[], char c) {
+    // Write your code here
+int n = strlen(input);
+char newarr[n];        
+for(int h = 0;h<n;h++){
+int ch = false; 
+
+if(input[h]==c){
+    
+    
+ch = true;    
+input[h]=' ';    
+    
+    
+    
+    
+}    
+    
+
+    
+    
+    
+} 
+int count =0; 
+int k =0;    
+for(k=0;input[k];k++){
+    
+if(input[k] != '\0' && input[k] != ' '){
+    
+newarr[count++]=input[k];    
+    
+    
+    
+}    
+    
+    
+    
+    
+}
+newarr[count]='\0';    
+strcpy(input,newarr);      
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+}
