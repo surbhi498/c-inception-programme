@@ -1,0 +1,27 @@
+#include <cstring>
+using namespace std; 
+#include <iostream> 
+void trimSpaces(char input[]) {
+  /*  Don't write main().
+   *  Don't read input, it is passed as function argument.
+   *  Don't print or return the output.
+   *  Change in the given input string itself.
+   *  Taking input and printing output is handled automatically.
+   */
+int t = strlen(input);
+int count = 0;  
+int i;    
+for(i =0;input[i];i++){
+    
+if(input[i] != ' ')
+{    
+input[count++] = input[i];    
+    
+    
+}    
+    
+    
+    
+}
+input[count]='\0';    
+}
