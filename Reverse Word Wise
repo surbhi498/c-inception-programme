@@ -1,0 +1,99 @@
+// input - given string
+// You need to update in the given string itself. No need to print or return anything
+#include <cstring>
+#include<iostream>
+using namespace std; 
+void reverseStringWordWise(char input[]) {
+    // Write your code here
+  int t = strlen(input);
+int newchar[t];    
+int i =0; 
+int count = 0;  
+for(i=t-1;i>=0;i--){
+    
+if(input[i] != ' '){
+    
+newchar[count++]=input[i];    
+    
+    
+    
+    
+}    
+    
+else{
+    
+    
+newchar[count++] = ' ';    
+    
+    
+}    
+    
+    
+    
+}
+newchar[count] ='\0';
+int count1=0; 
+int j = 0;   
+while(j<t){
+int start = j;
+int end = j;    
+while(newchar[j]!= ' ' && (newchar[j]!='\0')){
+    
+end++;    
+j++;    
+    
+}   
+    
+for(int l = end-1;l>=start;l--){    
+input[count1++] = newchar[l];    
+    
+}    
+input[count1++] = ' ';
+    
+j = j + 1;    
+} 
+input[count]='\0';
+/*int j;   
+int count1 = 0;    
+for(j=t-1;j>=0;j--){
+    
+if(input[j] != ' '){
+    
+input[count1++]=newchar[j];    
+    
+    
+    
+    
+}    
+    
+else{
+    
+    
+input[count1++] = ' ';    
+    
+    
+}    
+    
+    
+    
+}
+input[count] ='\0';*/
+/*int count1 = 0;    
+for(int y=t-1;y>=0;y--){ 
+if(newchar[y] != ' ')  {  
+input[count1++]=newchar[y];
+} 
+else{
+    
+input[count1++] = ' ';    
+    
+}    
+//input[count1]='\0';    
+}   
+input[count1]='\0';     
+}   */
+    
+//cout<<newchar;
+//cout<<input;
+}    
+      
