@@ -1,0 +1,62 @@
+// input - given string
+// You need to update in the input string itself. No need to return or print anything
+#include <iostream> 
+#include <string.h>
+#include<stdio.h> 
+using namespace std; 
+void removeConsecutiveDuplicates(char input[]) {
+    // Write your code here
+
+ int n = strlen(input);
+ int k =0;
+ char newarr[n]; 
+  int l = 0; 
+  int y = 0;  
+ while(l<n){
+ int t = input[l];    
+ int count = 0;    
+ while(input[y] == t && input[y] != '\0'){
+     
+     
+ y++;    
+ count++;    
+     
+     
+     
+ }    
+ if(count>1){
+     
+ newarr[k] = t;    
+ k++;    
+     
+     
+ }    
+ else{
+     
+     
+ newarr[k] = t;  
+ k++;    
+     
+     
+     
+ }    
+     
+     
+     
+     
+     
+     
+l =y;     
+     
+ }   
+newarr[k]='\0';    
+strcpy(input,newarr);   
+    
+    
+    
+    
+    
+    
+    
+    
+}
