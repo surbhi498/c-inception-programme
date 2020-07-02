@@ -1,0 +1,56 @@
+// input - given string
+#include<stdio.h>
+#include <iostream>
+#include <string.h>
+#include<bits/stdc++.h>
+char highestOccurringChar(char input[]) {
+// Write your code here
+int n = strlen(input);
+char ch;
+int max = INT_MIN; 
+int t;    
+for(int g =0;(g<n && input[g] != '\0');g++){
+t = input[g];    
+int count = 0;    
+for(int y = 0;(y<n && input[y] != '\0');y++){
+    
+if(input[y]==t){
+    
+    
+count++;    
+    
+    
+    
+    
+}    
+    
+    
+    
+    
+    
+    
+}    
+if(count>max){
+    
+max = count;    
+ch = t;    
+    
+    
+    
+}    
+    
+    
+    
+    
+    
+}    
+return ch;    
+    
+    
+    
+    
+    
+    
+    
+    
+}
