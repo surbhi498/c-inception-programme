@@ -1,0 +1,64 @@
+// input - given string
+// Update in the given input itself. No need to return or print anything
+#include<stdio.h>
+#include <string.h> 
+void reverseEachWord(char input[]) {
+    // Write your code here
+int n = strlen(input);
+int  newarr[n];  
+int t=0;
+int i = 0; 
+//int count = 0; 
+int k =0;    
+while(t<n)
+{
+i=t; 
+int count = 0;    
+while(input[i] != ' ' && input[i] != '\0')    
+{
+t++;    
+count++;    
+i++;    
+    
+}    
+//count--;
+int l = i-1;
+for(int j = count;j>0;j--){
+    
+newarr[k] = input[l];   
+k++;    
+l--;    
+    
+    
+    
+}
+//k++;    
+newarr[k]=' ';    
+k++;    
+t++;    
+    
+    
+}    
+    
+newarr[k]='\0';    
+    
+for(int r =0;r<n;r++){
+    
+    
+input[r] = newarr[r];   
+    
+    
+    
+    
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
