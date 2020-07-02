@@ -1,0 +1,83 @@
+// input1 - first input string
+// input2 - second input string
+
+
+#include <stdio.h>
+#include <iostream> 
+#include <string.h> 
+using namespace std; 
+
+bool isPermutation(char input1[], char input2[]) {
+    // Write your code here
+int ch;
+int count = 0;    
+int n1 = strlen(input1);
+int n2 = strlen(input2);
+//ch = false;    
+for(int j =0;j<n1;j++){
+int ch = false;    
+for(int h =0;h<n2;h++){
+    
+    
+if(input1[j]==input2[h]){
+    
+input2[h] = '$';    
+ch = true; 
+break;   
+//return true;    
+//break;    
+    
+    
+    
+}    
+    
+
+    
+    
+    
+    
+}    
+if(!ch){
+    
+  
+return false;   
+break;    
+    
+}    
+    
+else{
+    
+    
+count++;    
+    
+    
+    
+    
+}    
+    
+    
+    
+    
+}    
+    
+if(count == n1){
+    
+return true;    
+    
+    
+    
+}    
+    
+else{
+    
+    
+return false;    
+    
+    
+    
+}    
+    
+    
+    
+    
+}
