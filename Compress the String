@@ -1,0 +1,77 @@
+// input - given string
+// You need to update in the given string itself i.e. in input. No need to return or print.
+
+#include<stdio.h>
+#include <string.h>
+
+void stringCompression(char input[]) {
+    // Write your code here
+
+int n = strlen(input);
+char newarr[n];    
+int i =0;
+int k =0;    
+while(input[i] != '\0'){
+    
+int t = input[i];
+int count = 0;    
+while(input[i] == t){
+    
+    
+count++;    
+i++;    
+    
+    
+    
+} 
+//count--;    
+int l = i-1;    
+if(count>1 && count<=9) {
+    
+    
+newarr[k]=input[l];
+k++;    
+newarr[k]= count+48;    
+k++;    
+}  
+else
+{
+    
+    
+//cout<<input[l];    
+newarr[k]=input[l];    
+k++;    
+    
+    
+}    
+    
+//newarr[]    
+    
+    
+    
+    
+}
+newarr[k]='\0';    
+int p = 0;    
+for(int u =0;u<n;u++){
+    
+input[p]=newarr[u];    
+p++;    
+    
+    
+    
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
