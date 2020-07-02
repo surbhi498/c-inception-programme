@@ -1,0 +1,45 @@
+
+
+#include<stdio.h> 
+#include<string.h> 
+#include<bits/stdc++.h> 
+#include<iostream>
+using namespace std; 
+void printSubstrings(char str[]){
+  /* Don't write main().
+   *  Don't read input, it is passed as function argument.
+   * Print output as specified in the question.
+
+*/
+int t;    
+int n = strlen(str);
+for(int i =0;i<n;i++){
+for(int t =i;t<n;t++){    
+	
+for(int j =i;j<=t;j++)	{
+	
+cout << str[j]; 	
+	
+	
+}
+cout<<endl;    
+    
+}	
+//cout<<endl;	
+	
+	
+}	
+	   
+    
+    
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
