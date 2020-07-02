@@ -1,0 +1,64 @@
+#include <cstring>
+bool checkPalindrome(char str[]){
+
+
+  /* Don't write main().
+   *  Don't read input, it is passed as function argument.
+   *  Return output and don't print it.
+   *  Taking input and printing output is handled automatically.
+   */
+
+int t = strlen(str);
+int i = 0;
+int j = t-1; 
+int mid = (i+j)/2;    
+if((t%2)!=0)
+
+{   
+ while((i<mid)&&(j>mid)) {
+     
+ if(str[i]==str[j])
+ {
+     
+  i++;   
+  j--;   
+     
+ }    
+ else{
+     
+    
+ return false;    
+     
+ }    
+     
+     
+ }  
+ return true;   
+}
+    
+else{
+    
+while(i<j){
+    
+ if(str[i]==str[j]){
+     
+ i++;   
+ j--;   
+    
+}    
+    
+else{
+    
+  
+return false;    
+    
+}    
+    
+    
+    
+}    
+return true;    
+}    
+    
+}    
+    
