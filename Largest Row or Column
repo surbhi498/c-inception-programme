@@ -1,0 +1,138 @@
+
+
+
+#include<bits/stdc++.h> 
+
+#include<iostream>
+
+using namespace std; 
+void findLargest(int arr[][1000], int row, int col){
+
+
+  /* Don't write main().
+   *  Don't read input, it is passed as function argument.
+   * Print output as specified in the question.
+   */
+
+int t;
+int max0 = INT_MIN;
+int t1;
+int max1 = INT_MIN;
+int maxindex1;
+int maxindex;	
+
+//int j;
+//int i;	
+
+
+for( int i =0;i<col;i++){
+int sum = 0;
+t = i;	
+for(int j =0;j<row;j++){
+	
+sum += arr[j][i];	
+	
+	
+	
+	
+	
+}	
+
+if(sum>max0){
+	
+max0 = sum;	
+maxindex = t;	
+	
+}	
+//cout<<t<<" "<<sum<<endl;	
+	
+	
+	
+	
+	
+}
+	
+
+	
+
+
+//int j;
+//int i;	
+
+
+for(int i =0;i<row;i++){
+int sum1 = 0;
+t1 = i;	
+for(int j =0;j<col;j++){
+	
+sum1 += arr[i][j];	
+	
+	
+	
+	
+	
+}	
+
+if(sum1>max1){
+	
+max1 = sum1;	
+maxindex1 = t1;	
+	
+}	
+//cout<<t<<" "<<sum<<endl;	
+	
+	
+	
+	
+	
+	
+	
+}	
+	
+int index;
+//int index2;	
+int summy;	
+//sumcol(arr);	
+//sumrow(arr);
+if(max0>max1){
+	
+summy = max0;	
+index = maxindex;
+cout<<"column"<<" "<<index<<" "<<summy;	
+}	
+else{
+	
+summy = max1;	
+index = maxindex1;
+cout<<"row"<<" "<<index<<" "<<summy;
+	
+}			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
