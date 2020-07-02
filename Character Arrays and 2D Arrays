@@ -1,0 +1,83 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+       /*  Read input as specified in the question.
+	* Print output as specified in the question.
+	*/
+int M;
+int N;
+cin>>M;
+cin>>N;
+int arr[M][N];    
+for(int i=0;i<M;i++){
+for(int j =0;j<N;j++){
+    
+cin>>arr[i][j];    
+    
+    
+    
+    
+    
+}    
+    
+cout<<endl;    
+    
+    
+    
+    
+}    
+    
+int j;
+int i;	
+int t;
+for( i =0;i<N;i++){
+int sum = 0;
+t = i;	
+for(j =0;j<M;j++){
+	
+sum += arr[j][i];	
+	
+	
+	
+	
+	
+}	
+	
+cout<<sum<<" ";	
+	
+	
+	
+	
+	
+	
+	
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+    
+    
+    
+    
+
+
+
